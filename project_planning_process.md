@@ -1,6 +1,6 @@
 # The Reusable Project Planning Process
 
-This process guides the development of a project from an initial idea to a complete plan, documented in three distinct Markdown artifacts: The **PRD** (What/Why), the **TSD** (How), and the **Roadmap** (When).
+This process guides the development of a project from an initial idea to a complete plan, documented in three distinct Markdown artifacts: The **PRD** (What/Why), the **TSD** (How), and the **Roadmap** (Milestones/Sequence).
 
 ## 0\. Initial Intake (The Project Brief)
 
@@ -48,10 +48,10 @@ This phase focuses on translating the product vision into a technical blueprint.
       * The LLM must present the trade-offs identified during the technical research before asking for the user's decision (e.g., "Approach A is faster but increases app size; Approach B is smaller but slower. Do you prefer A?").
 3.  **Artifact Generation 2:** Generate the **Technical Specification Document (TSD)** in Markdown format, including detailed Input/Output examples and technical edge cases.
 
-## 3\. Phase 3: Roadmap and Execution Planning (The "When")
+## 3\. Phase 3: Roadmap and Execution Planning (The "Sequence")
 
 This phase breaks the work into manageable steps.
 
-1.  **Milestone Definition:** Analyze the PRD and TSD and break the project down into sequential, logical steps that deliver incremental value.
-2.  **Artifact Generation 3:** Generate the **Implementation Roadmap** in Markdown format.
+1.  **Milestone Definition:** Analyze the PRD and TSD and break the project down into sequential, logical steps that deliver incremental value, without assigning calendar dates or durations.
+2.  **Artifact Generation 3:** Generate the **Implementation Roadmap** in Markdown format, documenting the ordered milestones and key deliverables with no time-based commitments.
 3.  **Handoff:** Confirm all artifacts (PRD, TSD, Roadmap) with the user and ask which Milestone they would like to begin implementing.
