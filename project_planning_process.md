@@ -18,6 +18,9 @@ To begin a new project, the user should provide the initial information using th
 
 **Key Constraints and Preferences:**
 [List any critical technical constraints (e.g., "must be client-side", "must work offline"), preferred technologies (e.g., "prefer Python", "avoid frameworks"), budgetary constraints (e.g., "must use free services"), or design inspirations.]
+
+**Unknowns & Open Questions:**
+[List gaps in information, unresolved decisions, or outstanding questions that need clarification before planning can proceed.]
 ```
 
 ## 1\. Phase 1: Discovery, Research, and PRD Definition (The "What")
