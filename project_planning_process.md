@@ -7,6 +7,9 @@ This process guides the development of a project from an initial idea to a compl
 To begin a new project, the user should provide the initial information using the following template:
 
 ```markdown
+**Project Name**
+[The chosen name, or a concept you'd like to brainstorm]
+
 **Problem Statement:**
 [Describe the problem you are trying to solve, the pain points, and the context. Why is this needed?]
 
@@ -27,16 +30,25 @@ To begin a new project, the user should provide the initial information using th
 
 This phase focuses on understanding the domain and defining the product scope.
 
-1.  **Domain Research Strategy:**
+1.  **Project Naming:**
+      * Determine or refine the project’s name as the first step.
+      * Naming helps define the identity and context of the project before proceeding with deeper research.
+      * **Action:** Confirm or brainstorm a project name with the user to establish a clear reference point.
+      * **Name Brainstorming Guidance:**
+        * Explore names through multiple lenses: Literal, Metaphoric, Conceptual, Technical, and Symbolic.
+        * Balance clarity, emotion, and distinctiveness when brainstorming.
+        * Evaluate finalists for clarity, tone, distinctiveness, and practicality (domain/handle availability).
+        * Test top names in real contexts (spoken, written, visual) before finalizing.
+2.  **Domain Research Strategy:**
       * Analyze the intake brief to identify specialized domain knowledge required (e.g., complex calculations, industry standards, competitive landscape).
       * The LLM proposes specific areas requiring deeper research.
       * **Action:** The LLM asks the user whether the LLM should conduct this research and present findings, or if the user will provide the necessary domain expertise.
-2.  **Execute Domain Research:**
+3.  **Execute Domain Research:**
       * Based on the strategy, the research is conducted.
       * *Output:* A brief summary of key domain insights, terminology, and potential functional edge cases relevant to the project.
-3.  **Clarification Round 1 (Product Focus):**
+4.  **Clarification Round 1 (Product Focus):**
       * Ask a numbered list of binary (Yes/No or A/B) questions to define the scope and functionality, informed by the domain research.
-4.  **Artifact Generation 1:** Generate the **Product Requirements Document (PRD)** in Markdown format.
+5.  **Artifact Generation 1:** Generate the **Product Requirements Document (PRD)** in Markdown format.
 
 ## 2\. Phase 2: Technical Analysis and TSD Definition (The "How")
 
