@@ -48,7 +48,18 @@ This phase focuses on understanding the domain and defining the product scope.
       * Based on the strategy, the research is conducted.
       * *Output:* A brief summary of key domain insights, terminology, and potential functional edge cases relevant to the project.
 4.  **Clarification Round 1 (Product Focus):**
-      * Ask a numbered list of binary (Yes/No or A/B) questions to define the scope and functionality, informed by the domain research.
+      * Ask a numbered list of questions informed by the domain research, and format each question as:
+
+        ```markdown
+        1. Topic/Question
+            - Option A (Recommended, if applicable): ...
+            - Option B: ...
+            - Option C: ...
+            - ...
+            - Option X: Explain the options
+        ```
+
+      * Ensure Option A clearly signals the recommended path when one exists (omit the "Recommended" tag if unsure), add additional options in alphabetical order as needed, and always include Option X as the final choice so the user can request deeper explanation before deciding.
 5.  **Artifact Generation 1:** Generate the **Product Requirements Document (PRD)** in Markdown format.
 
 ## 2\. Phase 2: Technical Analysis and TSD Definition (The "How")
@@ -60,8 +71,8 @@ This phase focuses on translating the product vision into a technical blueprint.
       * **Action:** Conduct research focused on specific technical implementations, algorithms, available libraries, APIs, and architectural patterns suitable for the requirements and constraints.
       * Analyze the trade-offs (performance, cost, complexity, maintainability) between different approaches.
 2.  **Clarification Round 2 (Technical Focus):**
-      * Ask a numbered list of binary questions focusing on the technology stack.
-      * The LLM must present the trade-offs identified during the technical research before asking for the user's decision (e.g., "Approach A is faster but increases app size; Approach B is smaller but slower. Do you prefer A?").
+      * Ask a numbered list of technology-focused questions using the same Option-based structure above, where Option A (Recommended) reflects the preferred implementation when there is a clear favorite (omit the tag if unsure) and Option X remains available for explanation.
+      * Present the trade-offs identified during the technical research inline with the options before asking for the user's decision (e.g., "Approach A is faster but increases app size; Approach B is smaller but slower. Do you prefer A?").
 3.  **Artifact Generation 2:** Generate the **Technical Specification Document (TSD)** in Markdown format, including detailed Input/Output examples and technical edge cases.
 
 ## 3\. Phase 3: Roadmap and Execution Planning (The "Sequence")
