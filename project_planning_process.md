@@ -39,6 +39,7 @@ This phase focuses on understanding the domain and defining the product scope.
         * Balance clarity, emotion, and distinctiveness when brainstorming.
         * Evaluate finalists for clarity, tone, distinctiveness, and practicality (domain/handle availability).
         * Test top names in real contexts (spoken, written, visual) before finalizing.
+        * Share 10 names for each category. 4 out of 10 should use alliteration.
 2.  **Domain Research Strategy:**
       * Analyze the intake brief to identify specialized domain knowledge required (e.g., complex calculations, industry standards, competitive landscape).
       * The LLM proposes specific areas requiring deeper research.
