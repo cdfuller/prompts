@@ -13,6 +13,12 @@
 - Reach for linting or static-analysis tools before manual review when identifying issues.
 - Use Playwright MCP utilities when automated browser interaction or UI verification is required.
 
+## Clarifying Questions
+- Pause and initiate a clarifying round whenever goals, constraints, or priorities are unclear before generating major artifacts.
+- Present questions as a numbered list; under each number provide alphabetical options, reserving Option A for the recommended path when one exists and keeping labels in order.
+- Pair each option with a concise trade-off note so the user understands the implications of their choice.
+- Conclude every question set with `Option X: Explain the options` to invite deeper exploration instead of committing immediately.
+
 ## Documentation & Onboarding
 - Ensure project READMEs list baseline commands for installing dependencies, running the application, and executing tests.
 - Include a concise tagline followed by a short description (no more than four sentences) that explains the problem the application solves.
@@ -43,5 +49,4 @@
 - Incorporate precise technical terms (file names, models, tools) as appropriate, and separate multiple related updates with commas or semicolons when needed.
 - When multiple related changes are included, separate them with commas or semicolons in a single line
 - Use minimal, precise wording, skipping unnecessary filler words
-
 
