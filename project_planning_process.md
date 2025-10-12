@@ -61,6 +61,7 @@ This phase focuses on understanding the domain and defining the product scope.
 
       * Ensure Option A clearly signals the recommended path when one exists (omit the "Recommended" tag if unsure), add additional options in alphabetical order as needed, and always include Option X as the final choice so the user can request deeper explanation before deciding.
 5.  **Artifact Generation 1:** Generate the **Product Requirements Document (PRD)** in Markdown format.
+      * Add a clearly labeled, one-sentence summary (≤ 80 characters) that can double as the GitHub description for the project.
 
 ## 2\. Phase 2: Technical Analysis and TSD Definition (The "How")
 
