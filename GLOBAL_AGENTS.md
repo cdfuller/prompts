@@ -6,7 +6,7 @@
 
 ## Coding Standards
 - In Python use 4-space indentation, `snake_case` for modules, functions, and variables, `PascalCase` for classes, and `UPPER_SNAKE_CASE` for constants.
-- Skip Python type annotations; capture expectations with concise docstrings or module comments when clarity is needed.
+- Skip Python type annotations; capture expectations with concise Google style docstrings or module comments when clarity is needed.
 - Target Python 3.13 and manage dependencies with `uv` for Python projects.
 
 ## Tooling & Automation
