@@ -84,4 +84,5 @@ This phase breaks the work into manageable steps.
       * Reserve one of the earliest execution tasks for creating a project-appropriate `.gitignore`.
 2.  **Artifact Generation 3:** Generate the **Implementation Roadmap** in Markdown format, documenting the ordered milestones and key deliverables with no time-based commitments.
 3.  **Handoff:** Confirm all artifacts (PRD, TSD, Roadmap) with the user and ask which Milestone they would like to begin implementing.
-      * During execution, explicitly call out when each milestone is completed before moving to the next.
+      * During execution, explicitly call out when each milestone is completed before moving to the next, highlighting how far along the team is in the roadmap sequence.
+      * Share a suggested single-line commit message summarizing the completed milestone before proceeding.
