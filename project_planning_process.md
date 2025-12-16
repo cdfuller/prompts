@@ -26,7 +26,7 @@ To begin a new project, the user should provide the initial information using th
 [List gaps in information, unresolved decisions, or outstanding questions that need clarification before planning can proceed.]
 ```
 
-## 1\. Phase 1: Discovery, Research, and PRD Definition (The "What")
+## Phase 1: Discovery, Research, and PRD Definition (The "What")
 
 This phase focuses on understanding the domain and defining the product scope.
 
@@ -63,7 +63,7 @@ This phase focuses on understanding the domain and defining the product scope.
 5.  **Artifact Generation 1:** Generate the **Product Requirements Document (PRD)** in Markdown format.
       * Add a clearly labeled, one-sentence summary (≤ 80 characters) that can double as the GitHub description for the project.
 
-## 2\. Phase 2: Technical Analysis and TSD Definition (The "How")
+## Phase 2: Technical Analysis and TSD Definition (The "How")
 
 This phase focuses on translating the product vision into a technical blueprint.
 
@@ -76,13 +76,99 @@ This phase focuses on translating the product vision into a technical blueprint.
       * Present the trade-offs identified during the technical research inline with the options before asking for the user's decision (e.g., "Approach A is faster but increases app size; Approach B is smaller but slower. Do you prefer A?").
 3.  **Artifact Generation 2:** Generate the **Technical Specification Document (TSD)** in Markdown format, including detailed Input/Output examples and technical edge cases.
 
-## 3\. Phase 3: Roadmap and Execution Planning (The "Sequence")
+## Phase 3: Roadmap and Execution Planning (The "Sequence")
 
-This phase breaks the work into manageable steps.
+This phase produces a **mandatory, structured implementation roadmap** that defines execution order without time-based commitments.
 
-1.  **Milestone Definition:** Analyze the PRD and TSD and break the project down into sequential, logical steps that deliver incremental value, without assigning calendar dates or durations.
-      * Reserve one of the earliest execution tasks for creating a project-appropriate `.gitignore`.
-2.  **Artifact Generation 3:** Generate the **Implementation Roadmap** in Markdown format, documenting the ordered milestones and key deliverables with no time-based commitments.
-3.  **Handoff:** Confirm all artifacts (PRD, TSD, Roadmap) with the user and ask which Milestone they would like to begin implementing.
-      * During execution, explicitly call out when each milestone is completed before moving to the next, highlighting how far along the team is in the roadmap sequence.
-      * Share a suggested single-line commit message summarizing the completed milestone before proceeding.
+### Requirements
+
+- This phase MUST always generate a file named `ROADMAP.md`.
+- The roadmap MUST be structured as a sequence of **Milestones**.
+- Milestones MUST describe *what is delivered*, not *how long it takes*.
+- No calendar dates, durations, or estimates are allowed.
+
+---
+
+### Milestone Structure (Normative)
+
+Each milestone MUST:
+
+- Be titled using the format:
+
+  ```
+  ## Milestone N (MN) — <Descriptive Title>
+  ```
+
+- Include:
+  - **Goal:** A concise description of what the milestone accomplishes
+  - **Exit Criteria:** Clear, observable conditions that define completion
+
+---
+
+### Required Milestones
+
+#### Milestone 0 (M0) — Project Initialization
+
+The roadmap MUST begin with:
+
+```
+## Milestone 0 (M0) — Project Initialization
+```
+
+This milestone MUST include:
+- Project-level setup
+- Creation of a project-appropriate `.gitignore`
+- A placeholder `README.md`
+
+This milestone establishes a clean foundation and must be completed before any functional work begins.
+
+---
+
+#### Final Milestone — Documentation & Closure
+
+The roadmap MUST end with a documentation-focused milestone.
+
+This milestone SHOULD include:
+- README finalization
+- Developer documentation (if applicable)
+- Validation that planning and implementation artifacts are aligned
+
+This milestone formally closes the implementation sequence.
+
+---
+
+### Artifact Generation
+
+1. **Milestone Definition**
+   - Analyze the PRD and TSD
+   - Break the project into sequential milestones that deliver incremental value
+   - Ensure each milestone can be completed independently
+   - Ensure milestones respect the defined constraints and invariants
+
+2. **Artifact Generation 3**
+   - Generate `ROADMAP.md` in Markdown format
+   - Use the required milestone structure
+   - Include all milestones from M0 through final documentation
+
+3. **Handoff to Execution**
+   - Confirm all planning artifacts (PRD, TSD, ROADMAP) with the user
+   - Ask which milestone should be implemented first
+
+---
+
+### Execution Guidance (During Implementation)
+
+During execution:
+- Explicitly call out when a milestone is completed before moving to the next
+- State progress using milestone numbering (e.g., “M2 complete; beginning M3”)
+- Share a **suggested single-line commit message** summarizing the completed milestone before proceeding
+
+---
+
+### Completion Condition
+
+Phase 3 is complete when:
+- `ROADMAP.md` exists
+- All milestones follow the required structure
+- The roadmap begins with M0 and ends with documentation
+- No time-based commitments are present
